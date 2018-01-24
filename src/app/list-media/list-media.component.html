@@ -1,0 +1,18 @@
+<div *ngFor="let stop of stopArray">
+  <ul>
+    <li *ngFor="let route of stop.patterns"></li>
+  </ul>
+</div>
+
+
+<p>
+  {{printThis}}
+<p>
+
+  <ul>
+    <li *ngFor="let media of mediaArray">
+      <img [src]="mediaService.mediaUrl + media.filename">
+      <h4>Title</h4>
+      <p>Description</p>
+    </li>
+  </ul>
